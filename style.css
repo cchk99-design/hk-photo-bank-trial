@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #AEE2FF; /* Kid-friendly Blue */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header { margin-top: 20px; }
+
+select {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 3px solid #0077B6;
+}
+
+.nav-controls { margin: 15px 0; }
+
+#homeBtn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #FF914D;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px #cc743d;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#homeBtn:active {
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+#flashcard-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#card {
+    background: white;
+    width: 85%;
+    max-width: 450px;
+    height: 55vh;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#vocab-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.footer { margin-bottom: 30px; color: #023E8A; font-weight: bold; }
