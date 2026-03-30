@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>HK Preschool Photo Bank - Trial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <select id="categorySelect" onchange="changeCategory()">
+            <option value="animal">🐶 Animals (動物)</option>
+            <option value="sports">⚽ Sports (運動)</option>
+            <option value="electronic_appliances">📺 Appliances (電器)</option>
+        </select>
+    </div>
+
+    <div class="nav-controls">
+        <button id="homeBtn" onclick="goHome()">🏠 Home</button>
+    </div>
+
+    <div id="flashcard-container">
+        <div id="card">
+            <img id="vocab-image" src="" alt="Photo Loading...">
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Swipe Left or Right to see more!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
